@@ -1,0 +1,73 @@
+1)	Faça um programa que leia a idade de uma pessoa expressa em dias e mostre-a expressa em anos, meses e dias.
+idadeatualemdias = int(input('Digite sua idade atual em DIAS: '))
+idadeemanos = (idadeatualemdias / 365) / 12
+idadeemmeses = (idadeemanos) * 12
+idadeemdias = idadeatualemdias
+
+print("A idade em dias é ",idadeemdias, "a idade em meses é ",idadeemmeses, "e a idade em anos é ",idadeemanos)
+
+
+
+
+
+
+2)	Elaborar um programa que lê 3 valores a,b,c e verifica se eles formam ou não um triângulo. Supor que os valores lidos são inteiros e positivos. Caso os valores formem um triângulo, calcular e escrever a área deste triângulo. Se não formam triângulo escrever os valores lidos. (Se a > b + c não formam triângulo algum, se a é o maior).
+
+ladoa = int(input('Digite o lado A da figura: '))
+ladob = int(input('Digite o lado B da figura: '))
+ladoc = int(input('Digite o lado C da figura: '))
+checagem = (ladob + ladoc) - ladoa
+semiperimetro = (ladoa+ladob+ladoc)/2
+area = (semiperimetro*(semiperimetro-ladoa)*(semiperimetro-ladob)*(semiperimetro-ladoc))**0.5
+if checagem >=0:
+    print("A figura é um triângulo e sua área é ",area)
+else:
+    print("A figura em questão NÃO se trata de um triângulo")
+    
+    
+    
+    
+    
+
+3)	Faça um programa que leia 3 números inteiros e mostre o menor deles.
+a = int(input('Digite um numero A: '))
+b = int(input('Digite um numero B: '))
+c = int(input('Digite um numero C: '))
+menor = a
+if b<a and b<c:
+    menor = b
+if c<a and c<b:
+    menor = c
+
+print("O menor número entre os 3 é: ",menor)
+
+
+
+
+
+
+
+4)	Implementar uma função que retorne verdadeiro se o número for primo (falso caso contrário). Testar de 1 a 100.
+numero = int(input('Digite um número de 0 a 100: '))
+
+    if numero % 2 == 0:
+
+        print("O número É primo")
+
+    else:
+        print("O número NÃO é primo")
+        
+        
+        
+        
+        
+
+
+5)	Escreva uma função que:
+a)	Receba uma frase como parâmetro.
+b)	Retorne uma nova frase com cada palavra com as letras invertidas.
+
+fraseparametro = str(input('Digite uma frase ou texto: '))
+string = fraseparametro[::-1]
+print('')
+print('A frase invertida é: {}'.format(string))
